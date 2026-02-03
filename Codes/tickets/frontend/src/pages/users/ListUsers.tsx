@@ -1,7 +1,7 @@
+import AppHeader from "@/components/AppHeader"
 import api from "@/services/api"
 import type { UserInterface } from "@/types/users"
 import { useEffect, useState } from "react"
-
 
 const ListUsers = () => {
 
@@ -21,7 +21,7 @@ const ListUsers = () => {
 
     return(
         <>
-            <h2>Lista de usuários</h2>
+            <AppHeader title="Lista de usuários" />
 
             <ul>
 

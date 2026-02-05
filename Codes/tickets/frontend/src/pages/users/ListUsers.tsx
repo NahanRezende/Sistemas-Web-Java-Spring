@@ -26,7 +26,14 @@ const ListUsers = () => {
             <div className="flex flex-wrap justify-center">
                 {
                     users.map(user => (
-                        <Card key={user.id} id={user.id} name={user.name} />
+                        <Card 
+                            key={user.id} 
+                            id={user.id} 
+                            name={user.name} 
+                            updateUrl={`/users/${user.id}`}
+                            deleteUrl={`/users/${user.id}/delete`}
+                        
+                        />
                     ))
                 }
             </div>

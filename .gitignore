@@ -53,3 +53,5 @@ buildNumber.properties
 *.iws
 
 pg_data/
+
+.vscode
